@@ -1,5 +1,8 @@
 import { Link } from "react-router-dom";
 import "./footer.css";
+import anpc1 from "../assets/anpc-sal.webp";
+import anpc2 from "../assets/anpc-sol.png";
+import visaCards from "../assets/cards.png";
 export default function Footer() {
   return (
     <div className="footer-container">
@@ -46,19 +49,20 @@ export default function Footer() {
       </div>
       <div className="second-footer-container">
         <hr style={{ width: "100%" }} />
+        <p style={{padding:"10px"}}>Powered by SweetDreams Co.</p>
         <div>
-          <img src="src/assets/cards.png" alt="visa-img" />
+          <img src={visaCards} alt="visa-img" />
         </div>
         <div className="footer-text">
           <a target="_blank" title="" href="https://anpc.ro/ce-este-sal/">
-            <img style={{ height: "28px" }} src="src/assets/anpc-sal.webp" />
+            <img style={{ height: "28px" }} src={anpc1} alt="anpc img" />
           </a>
           <a
             target="_blank"
             title=""
             href="https://ec.europa.eu/consumers/odr/main/index.cfm?event=main.home2.show&amp;lng=RO"
           >
-            <img style={{ height: "28px" }} src="src/assets/anpc-sol.png" />
+            <img style={{ height: "28px" }} src={anpc2} alt="anpc img" />
           </a>
           <div className="footer-text">
             © 2020-2024
