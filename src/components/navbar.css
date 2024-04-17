@@ -1,0 +1,95 @@
+/* Font for logo */
+@import url('https://fonts.googleapis.com/css2?family=Sedan:ital@0;1&display=swap');
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 65px;
+    z-index: 10;
+    background-color: #EAEAEA;
+    opacity: 90%;
+    transition: 0.5s;
+   
+    
+}
+
+.logo h1{
+    color: #7D4D38;
+    font-family: "Sedan", serif;
+  font-weight: 900;
+  font-style: normal;
+   display: flex;
+}
+
+.header-bg{
+    background-color: #EAEAEA;
+    opacity: 90%;
+    transition: 0.5s;
+}
+.nav-menu{
+    display: flex;
+}
+
+
+.nav-menu li {
+    padding: 0 1rem;
+ 
+}
+
+.nav-menu li a{
+    /* padding: 0 1rem; */
+    font-weight: 900;
+}
+
+.hamburgerMenu{
+   display: none;
+}
+
+@media screen and (max-width:1040px) {
+     .nav-menu{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100vh;
+        background: #EAEAEA;
+        position:absolute;
+        top: 0;
+        left: -100%;
+        z-index: -3;
+        transition: 0.3s;
+        opacity: 90%;
+     }
+
+     .nav-menu.active{
+        left: 0;
+     }
+     .nav-menu li{
+        padding: 1rem 0;
+        ;
+     }
+     .nav-menu li a{
+        font-size: 2rem;
+     }
+
+     .hamburgerMenu{
+        display: initial;
+        cursor: pointer;
+     }
+}
+
+/* .logo {
+    will-change: filter;
+    transition: filter 300ms;
+  }
+  .logo:hover {
+    filter: drop-shadow(0 0 2em #646cffaa);
+  }
+  .logo.react:hover {
+    filter: drop-shadow(0 0 2em #61dafbaa);
+  }
+   */
