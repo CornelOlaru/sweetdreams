@@ -3,6 +3,9 @@ import "./footer.css";
 import anpc1 from "../assets/anpc-sal.webp";
 import anpc2 from "../assets/anpc-sol.png";
 import visaCards from "../assets/cards.png";
+import instagramICO from "../assets/instagram.svg";
+import facebookICO from "../assets/facebook.svg";
+import twitterICO from "../assets/twitter-x.svg";
 export default function Footer() {
   return (
     <div className="footer-container">
@@ -13,17 +16,17 @@ export default function Footer() {
           <ul className="social-icons">
             <li>
               <a href="https://facebook.com" target="_blank">
-                <img src="src/assets/facebook.svg" alt="facebook icon" />
+                <img src={instagramICO} alt="facebook icon" />
               </a>
             </li>
             <li>
               <a href="https://instagram.com" target="_blank">
-                <img src="src/assets/instagram.svg" alt="instagram icon" />
+                <img src={facebookICO} alt="instagram icon" />
               </a>
             </li>
             <li>
               <a href="https://x.com" target="_blank">
-                <img src="src/assets/twitter-x.svg" alt="twitter icon" />
+                <img src={twitterICO} alt="twitter icon" />
               </a>
             </li>
           </ul>
@@ -65,9 +68,9 @@ export default function Footer() {
             <img style={{ height: "28px" }} src={anpc2} alt="anpc img" />
           </a>
           <div className="footer-text">
-            © 2020-2024
+            ©2024
             <span itemScope="" itemType="http://schema.org/LocalBusiness">
-              &nbsp;&nbsp;&nbsp; <span itemProp="name">DULCINELLA</span>
+              &nbsp;&nbsp;&nbsp; <span itemProp="name">Sweet Dreams</span>
               <span
                 itemProp="address"
                 itemScope=""
@@ -75,22 +78,22 @@ export default function Footer() {
               >
                 &nbsp;&nbsp;&nbsp;&nbsp;
                 <span itemProp="addressCountry">Romania</span>,&nbsp;
-                <span itemProp="addressLocality">IAȘI</span>,&nbsp; strada{" "}
+                <span itemProp="addressLocality">BUCURESTI</span>,&nbsp; strada{" "}
                 <span itemProp="streetAddress">
-                  B-DUL DACIA, 24, BL:SC3, ET:P
+                  Lorem ipsum dolor sit amet
                 </span>
-                ,&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <span itemProp="addressRegion">Iași</span>,
+                ,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <span itemProp="addressRegion">Bucuresti</span>,
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cod postal{" "}
-                <span itemProp="postalCode">700423</span>, &nbsp;&nbsp;&nbsp;{" "}
+                <span itemProp="postalCode">000000</span>, &nbsp;&nbsp;&nbsp;{" "}
               </span>
               <br />
-              telefon: <span itemProp="telephone">+40770624826</span>
+              telefon: <span itemProp="telephone">+40000111222</span>
               <br />
-              email: <span itemProp="email">contact@dulcinella.ro</span>
+              email: <span itemProp="email">contact@sweetdreams.ro</span>
               <br />
-              <span itemProp="legalName">PATISERIA DULCINELLA SRL</span>, cod
-              fiscal <span itemProp="vatID">41563184</span> <br />
+              <span itemProp="legalName">PATISERIA SWEET DREAMS SRL</span>, cod
+              fiscal <span itemProp="vatID">00000000</span> <br />
               <Link to="/">
         <div className="footer-logo" >
           <h1 >Sweet Dreams</h1>
