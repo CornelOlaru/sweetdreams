@@ -2,6 +2,10 @@ import "./contact.css";
 // import 'bootstrap/dist/css/bootstrap.css';
 
 export default function ContactPage() {
+const submitBtn = () => {
+    alert("Message Sent Succesfully!!!");
+}
+
   return (
     <div className="contact-container">
       <div className="first-contact-container">
@@ -129,7 +133,7 @@ export default function ContactPage() {
             </div>
           </div>
           <div className="col-12">
-            <button className="btn btn-primary" type="submit">
+            <button onClick={submitBtn} className="btn btn-primary" type="submit">
               Submit form
             </button>
           </div>
