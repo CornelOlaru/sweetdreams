@@ -3,7 +3,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 25px;
+    margin: 0;
+    padding-top: 20px;
+    background-color: #EEEEEE;
 }
 
 .first-footer-container{
@@ -40,6 +42,37 @@
 .social-icons li{
     padding: 5px;
 }
+.footer-links a{
+    color: black;
+    
+}
+.footer-links a:hover{
+    color: rgba(249, 60, 60, 0.9);
+}
 .footer-text{
     text-align: center;
+    color: #5c6873;
+    font-family: "Din Pro", sans-serif;
+    padding: 0px ;
+    margin: 0px ;
+    font-weight: 300;
+}
+
+@media screen and (max-width:576px) {
+    .first-footer-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .first-footer-container div{
+        margin: 10px auto;
+    }
+    
+    .first-footer-container div{
+        text-align: center;
+    }
+
+
+    
 }

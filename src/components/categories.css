@@ -1,0 +1,10 @@
+.categories-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 95vh;
+    background-color: var(--light-gray);
+}
+.categories-container h1{
+    color: var(--black);
+}

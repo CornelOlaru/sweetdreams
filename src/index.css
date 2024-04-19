@@ -1,21 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Sedan:ital@0;1&display=swap');
-
+:root{
+  --light-red:rgba(249, 60, 60, 0.9);
+  --brown:#7D4D38;
+  --light-gray: #f7f7f7;
+  --dark-gray:#7f8c97;
+  --black:#000;
+}
 * {
-  --bs-link-color-rgb: #7D4D38;
+  /* --bs-link-color-rgb: #7D4D38; */
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   font-family: "Sedan", serif;
   
 }
-
+/* *, ::before, ::after{
+  box-sizing: border-box;
+} */
 
 body{
-  background: #EAEAEA;
+  background: #FFF;
 
 }
 
-h1,h4,p,
+h1,h4,
 a{
   color: #7D4D38;
   text-decoration: none;
@@ -29,9 +37,10 @@ ul{
   padding: 12px 32px ;
   font-size: 1rem;
   text-transform: uppercase;
-  background:rgb(248, 217, 15);
-  color:#222;
-  border: 1px solid #fff;
+  background:transparent;
+  color: var(--light-red);
+  border: 1px solid var(--light-red);
+  border-radius: 10px;
   font-weight: 600;
   cursor:pointer;
 }
@@ -43,8 +52,49 @@ color: #fff;
 }
 
 .btn:hover{
-  background: rgba(255, 255, 255, 0.2);
-  color: #fff;
+  background: var(--light-red);
+  color: var(--light-gray);
   transition: 0.3s;
 }
+/* @media  (min-width: 1400px) {
+  .container {
+    max-width: 1370px;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1170px;
+    margin: 0 auto;
+  }
+}
+  
+@media  (min-width: 992px) {
 
+  .container {
+    max-width: 970px;
+    margin: 0 auto;
+
+  }
+}
+
+@media  (min-width: 768px) {
+
+  .container {
+    max-width: 750px;
+    margin: 0 auto;
+
+  }
+  
+}
+@media (min-width: 576px) {
+
+  .container {
+    max-width: 550px;
+    margin: 0 auto;
+
+  }
+  
+}
+
+   */
