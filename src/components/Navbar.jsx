@@ -20,21 +20,23 @@ const Navbar = () => {
   };
   window.addEventListener("scroll", changeColor);
   return (
-    <div className={color ? "header header-bg" : "header"}>
+    
+    
+      <div className={color ? " header header-bg" : " header"}>
       <Link to="/">
-        <div className="logo">
+        <div className=" logo">
           <h1>Sweet Dreams</h1>
         </div>
       </Link>
       <ul className={click ? "nav-menu active" : "nav-menu"}>
         <li>
-          <Link to="/Products">Products</Link>
+          <Link className="active" to="/Products">Products</Link>
         </li>
         <li>
-          <Link to="/About">About</Link>
+          <Link className="active" to="/About">About</Link>
         </li>
         <li>
-          <Link to="/Contact">Contact</Link>
+          <Link className="active " aria-current="page" to="/Contact">Contact</Link>
         </li>
       </ul>
       <div className="hamburgerMenu" onClick={handleClick}>
@@ -45,6 +47,7 @@ const Navbar = () => {
         )}
       </div>
     </div>
+        
   );
 };
 

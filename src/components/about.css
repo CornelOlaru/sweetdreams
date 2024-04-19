@@ -1,0 +1,38 @@
+.about-container{
+    display: flex;
+    flex-direction: column;
+    background-color: #f7f7f7;
+}
+.about-sub-container1{
+    margin:0 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-title:nth-child(1){
+    text-align: center;
+    padding: 15px;
+    
+}
+.about-title{
+    padding: 20px;
+}
+.s-d-interior{
+    max-width: 100%;
+    float: left;
+    
+}
+.about-story{
+   
+    
+}
+#more{
+    display: none;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}

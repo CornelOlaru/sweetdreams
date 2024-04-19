@@ -1,0 +1,144 @@
+.contact-container{
+    display: flex;
+    flex-direction: row;
+    /* align-items: center; */
+    justify-content: space-around;
+    height: 95vh;
+    font-size: 24px;
+}
+
+.first-contact-container{
+    background-color: rgba(249, 60, 60, 0.9);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    height: auto;
+    
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+    
+
+}
+
+.second-contact-container{
+    background-color: #f7f7f7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    
+
+    
+}
+.first-contact-container h2{
+    padding: 10px;
+}
+.first-contact-container h3{
+    padding: 10px;
+}
+.first-contact-container p{
+    padding: 10px;
+}
+.first-contact-container a{
+    color: #FFF;
+    text-decoration: underline;
+}
+#main-form h1 .social-separator{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    /* margin-bottom: 20px; */
+}
+
+input{
+    
+    height: 30px;
+    background-color: var(--light-gray);
+    border: 1px solid var(--black);
+    border-radius: 5px;
+}
+select{
+    height: 30px;
+    
+    background-color: var(--light-gray);
+    border: 1px solid var(--black);
+    border-radius: 5px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    display: block;
+    width:50%;
+    /* border: 2px solid var(--black); */
+    border-radius: 10px;
+    padding: 10px;
+    }
+
+    form input{
+        width: 100%;
+        font-size: 16px;
+    }
+    form select{
+        width: 100%;
+        font-size: 16px;
+
+    }
+    form textarea{
+        width: 100%;
+        font-size: 16px;
+        
+    }
+    label{
+        color: var(--black);
+        font-size: 20px;
+    }
+    textarea{
+       
+    background-color: var(--light-gray);
+    border: 1px solid var(--black);
+    border-radius: 5px;
+    }
+    .form-check input{
+        text-align: start;
+        width: auto;
+        margin-right: 2px;
+    }
+    
+    .form-check{
+        
+        display: flex;
+        flex-direction: row;
+    }
+
+    @media screen and (max-width:576px) {
+        .contact-container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: auto;
+            
+        }
+
+        .first-contact-container{
+            width: 100%;
+            padding-top: 20px;
+        }
+        .second-contact-container{
+            width: 100%;
+            padding-top: 20px;
+            padding-bottom: 20px;
+
+
+        }
+        form{
+            width: 100%;
+        }
+    }
