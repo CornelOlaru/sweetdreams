@@ -8,11 +8,12 @@
     
 } 
 .hero-img{
-    margin: 25px;
+    margin-top: 25px;
     display: block;
-    max-width: 100%;
-    
-    background-color: red;
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    /* background-color: red; */
     overflow: hidden;
 
     

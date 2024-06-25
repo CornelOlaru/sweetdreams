@@ -23,7 +23,7 @@ export default function AboutPage() {
   }
   return (
     <div className=" about-container">
-      <div className="about-sub-container1">
+      <div className="container about-sub-container1">
         <img
           className="s-d-interior"
           src={s_d_interior}
@@ -77,9 +77,7 @@ export default function AboutPage() {
           Read More
         </button>
       </div>
-      <div className="about-sub-container2">
-        <h2 className="about-title">Our Products</h2>
-      </div>
+     
       <Products />
     </div>
   );

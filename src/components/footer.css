@@ -15,6 +15,7 @@
 
     flex-grow: fill;
     width: 100%;
+
 }
 .second-footer-container{
     display: flex;
@@ -34,10 +35,12 @@
     background-color: red ;
     
 }
+
 .social-icons{
     display: flex;
     flex-direction: row;
     margin-bottom: 50px;
+    justify-content: flex-start;
 }
 .social-icons li{
     padding: 5px;
@@ -47,7 +50,8 @@
     
 }
 .footer-links a:hover{
-    color: rgba(249, 60, 60, 0.9);
+    color: rgba(249, 60, 60, 0.9) !important;
+    text-decoration: underline !important;
 }
 .footer-text{
     text-align: center;
@@ -57,7 +61,17 @@
     margin: 0px ;
     font-weight: 300;
 }
-
+div ul {
+    padding-left: 0 !important;
+}
+svg{
+    width: 16px;
+    height: 16px;
+  
+  }
+  svg:hover{
+    fill: #C10000;
+  }
 @media screen and (max-width:576px) {
     .first-footer-container {
         display: flex;

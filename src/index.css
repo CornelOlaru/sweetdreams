@@ -11,28 +11,54 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: "Sedan", serif;
+  font-family: "Sedan", serif !important;
   
 }
 /* *, ::before, ::after{
   box-sizing: border-box;
 } */
+svg{
+  width: 16px;
+  height: 16px;
 
+}
+svg:hover{
+  fill: #C10000;
+}
 body{
   background: #FFF;
 
 }
+.grid {
+  --min:30ch;
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, var(--min)), 1fr));
+  align-items: center;
+  justify-items: center;
+  margin: 0;
+  background-color: #f7f7f7;
+  
+  gap: 1rem;
+  padding: 20px;
+}
+.main-container{
+  background-color: #f7f7f7;
 
+}
 h1,h4,
 a{
-  color: #7D4D38;
-  text-decoration: none;
+  color: var(--brown) !important;
+  text-decoration: none !important;
 }
 ul{
-  list-style-type: none;
+  list-style-type: none !important;
+  
 }
 
+.card{
+  background-color: #f7f7f7;
 
+}
 .btn{
   padding: 12px 32px ;
   font-size: 1rem;
