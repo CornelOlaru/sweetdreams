@@ -2,19 +2,19 @@ import "./contact.css";
 // import 'bootstrap/dist/css/bootstrap.css';
 
 export default function ContactPage() {
-const submitBtn = () => {
+  const submitBtn = () => {
     alert("Message Sent Succesfully!!!");
-}
+  };
 
   return (
-    <div className="contact-container">
+    <div className="container contact-container">
       <div className="first-contact-container">
         <h2>Are you looking for help?</h2>
         <h3>Contact us any time: </h3>
         <p>
           We are open to discussing any request and we welcome your feedback!
           Please fill out the form below, and we will respond promptly. You can
-          also reach us by phone at{" "} <br />
+          also reach us by phone at <br />
           <span>
             <i className="fa fa-phone"></i> <a href="#">+40000111222</a>
           </span>{" "}
@@ -29,9 +29,8 @@ const submitBtn = () => {
       </div>
       <div id="main-form" className="second-contact-container">
         <div>
-
-        <h1 style={{color:"black"}}>Stay in Touch</h1>
-        <div className="social-separator"></div>
+          <h2 style={{ color: "black" }}>Stay in Touch</h2>
+          <div className="social-separator"></div>
         </div>
 
         <form className="row g-3">
@@ -78,7 +77,7 @@ const submitBtn = () => {
             City
           </label>
           <div className="col-md-6">
-          <select className="form-select" id="validationDefault04" required>
+            <select className="form-select" id="validationDefault04" required>
               <option selected disabled value="">
                 Choose your city...
               </option>
@@ -92,8 +91,8 @@ const submitBtn = () => {
             County
           </label>
           <div className="col-md-3">
-            <select className="form-select" id="validationDefault04" required>
-              <option selected disabled value="">
+            <select className="form-select" id="validationDefault04" defaultValue="Bucuresti" required>
+              <option  disabled value="">
                 Choose your county...
               </option>
               <option>Bucuresti</option>
@@ -115,9 +114,16 @@ const submitBtn = () => {
             />
           </div>
           <div className="mb-3">
-  <label htmlFor="exampleFormControlTextarea1" className="form-label" >Textarea</label>
-  <textarea className="form-control" id="exampleFormControlTextarea1" placeholder="Enter your message here..." rows="3"></textarea>
-</div>
+            <label htmlFor="exampleFormControlTextarea1" className="form-label">
+              Textarea
+            </label>
+            <textarea
+              className="form-control"
+              id="exampleFormControlTextarea1"
+              placeholder="Enter your message here..."
+              rows="3"
+            ></textarea>
+          </div>
           <div className="col-12">
             <div className="form-check">
               <input
@@ -133,7 +139,11 @@ const submitBtn = () => {
             </div>
           </div>
           <div className="col-12">
-            <button onClick={submitBtn} className="btn btn-primary" type="submit">
+            <button
+              onClick={submitBtn}
+              className="btn btn-primary"
+              type="submit"
+            >
               Submit form
             </button>
           </div>

@@ -1,5 +1,5 @@
 .products-container{
-    --min: 30ch;
+    --min:30ch;
     display:grid;
     grid-template-columns: repeat(auto-fit, minmax(min(100%, var(--min)), 1fr));
     align-items: center;
@@ -9,13 +9,44 @@
     gap: 1rem;
     padding: 20px;
 }
+.products-title{
 
+}
 .img-element{
-    width: 250px;
+    width: 100%;
     display:block;
     object-fit: cover;
+    border-radius: 10px;
+    margin: 10px 0px;
+    transition: transform .2s ease;
+    
+    }
+    .img-element:hover { 
+        
+        transform: scale(1.1);
+      
+        
+        }
+        .img-element a{
+            width: 100%;
+           
+            
 }
 
-.img-element a{
+.card-title{
+font-size: 24px;
+color: #000 !important;
+font-weight: 900 !important;
+}
+
+.card-title:hover{
+    color: var(--brown) !important;
+}
+
+.img-container{
     width: 250px;
+    border-radius: 10px;
+
+    overflow: hidden;
+
 }

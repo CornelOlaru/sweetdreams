@@ -6,6 +6,7 @@ import visaCards from "../assets/cards.png";
 import instagramICO from "../assets/instagram.svg";
 import facebookICO from "../assets/facebook.svg";
 import twitterICO from "../assets/twitter-x.svg";
+
 export default function Footer() {
   const onClickFunction = () => {
     alert("Check out the Contact page!!!")
@@ -16,7 +17,7 @@ export default function Footer() {
         <div className="social">
           <h5 className="footer-title">Social</h5>
           <div className="social-separator"></div>
-          <ul className="social-icons">
+          <ul className=" social-icons">
             <li>
               <a href="https://facebook.com" target="_blank">
                 <img src={facebookICO} alt="facebook icon" />
@@ -38,7 +39,7 @@ export default function Footer() {
           <h5 className="footer-title">Popular Products</h5>
           <div className="social-separator"></div>
           <ul>
-            <Link to="/Products" className="footer-links">
+            <Link to="/Products" className="footer-links ">
               <li><a href="">Cakes</a></li>
             </Link>
             <Link to="/Products" className="footer-links">
@@ -65,7 +66,7 @@ export default function Footer() {
           </ul>
         </div>
       </div>
-      <div className="second-footer-container">
+      <div className="container second-footer-container">
         <hr style={{ width: "100%" }} />
         <p className="footer-text" style={{ padding: "10px" }}>Powered by SweetDreams Co.</p>
         <div>
