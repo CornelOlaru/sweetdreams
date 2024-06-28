@@ -4,6 +4,7 @@ import AllProductsList from "./AllProductsList";
 // import { Nav } from "react-bootstrap";
 import ProductModal from "./ProductModal";
 import CategoryNavbar from "./CategoryNavbar";
+import UpButton from "./UpButton";
 
 
 export default function AllProducts() {
@@ -87,6 +88,7 @@ const handleBuyModal = () => {
           handleBuy={handleBuyModal}
         />
     </div>
+    <UpButton/>
     </div>
   );
 }

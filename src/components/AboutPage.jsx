@@ -2,6 +2,7 @@ import "./about.css";
 import s_d_interior from "../assets/sweet_dreams_interior.jpeg";
 import Products from "./Products";
 import { useState } from "react";
+import UpButton from "./UpButton";
 export default function AboutPage() {
   const [more, setMore] = useState(false);
   function readMoreFunction() {
@@ -79,6 +80,7 @@ export default function AboutPage() {
       </div>
      
       <Products />
+      <UpButton/>
     </div>
   );
 }

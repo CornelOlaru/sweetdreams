@@ -11,7 +11,7 @@ export default function CategoryNavbar({value, onChange}) {
   <div className="navbar-collapse">
     <ul className="secondary-nav-menu ">
       <li className="nav-item active ">
-        <Link className="nav-link" to="/">Home <span className="sr-only">(current)</span></Link>
+        <Link className="nav-link" to="/Products">All <span className="sr-only">(current)</span></Link>
       </li>
       <li className="nav-item">
         <Link className="nav-link active" to="/category/1">Cakes</Link>
