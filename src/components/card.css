@@ -19,13 +19,17 @@
     border: 1px solid gray;
     padding: 10px;
     box-sizing: border-box;
+    border-radius: 10px;
   }
   
   .card-img-top {
     width: 100%;
-    height: auto; /* Ensure the image scales proportionally */
-     max-height: 150px; /*Set a max height for the image */
-    object-fit: contain; /* Ensure the image covers the area */
+    /* height: auto; Ensure the image scales proportionally */
+     height: 200px; /*Set a max height for the image */
+    object-fit: cover; /* Ensure the image covers the area */
+    border: 1px solid transparent;
+   
+    scale: -10px;
   }
   
   /* .container {

@@ -39,14 +39,14 @@ export default function Footer() {
           <h5 className="footer-title">Popular Products</h5>
           <div className="social-separator"></div>
           <ul>
-            <Link to="/Products" className="footer-links ">
+            <Link to="/category/1" className="footer-links ">
               <li><a href="">Cakes</a></li>
             </Link>
-            <Link to="/Products" className="footer-links">
-              <li><a href="">Tarts</a></li>
+            <Link to="/category/2" className="footer-links">
+              <li><a href="">Pastry</a></li>
             </Link>
-            <Link to="/Products" className="footer-links">
-              <li><a href="">Macarons</a></li>
+            <Link to="/category/3" className="footer-links">
+              <li><a href="">Cookies</a></li>
             </Link>
           </ul>
         </div>
