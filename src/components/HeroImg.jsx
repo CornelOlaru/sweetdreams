@@ -1,6 +1,7 @@
 import "./heroImg.css";
 import heroImg from "../assets/hero_img.jpeg";
 import Products from "./Products";
+import UpButton from "./UpButton";
 
 export default function HeroImg() {
   return (
@@ -9,6 +10,7 @@ export default function HeroImg() {
         <div className="container">
           <img className="hero-img" src={heroImg} alt="Hero Img" />
       <Products />
+      <UpButton/>
         </div>
       </div>
     </div>

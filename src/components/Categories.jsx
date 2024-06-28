@@ -6,6 +6,7 @@ import Navbar from "./Navbar";
 import ProductModal from "./ProductModal";
 import Footer from "./Footer";
 import CategoryNavbar from "./CategoryNavbar";
+import UpButton from "./UpButton";
 
 
 export default function Categories() {
@@ -76,7 +77,7 @@ export default function Categories() {
           product={selectedProduct}
         />
       </div>
-      
+      <UpButton/>
       <Footer />
     </div>
   );

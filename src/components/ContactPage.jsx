@@ -1,6 +1,7 @@
 import  { useState } from 'react';
 import emailjs from 'emailjs-com';
 import "./contact.css";
+import UpButton from './UpButton';
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
@@ -189,6 +190,7 @@ export default function ContactPage() {
           </div>
         </form>
       </div>
+      <UpButton/>
     </div>
   );
 }
