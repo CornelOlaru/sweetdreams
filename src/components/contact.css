@@ -1,145 +1,120 @@
-.contact-container{
+:root {
+    --light-gray: #f7f7f7;
+    --black: #000;
+  }
+  
+  .contact-container {
     display: flex;
     flex-direction: row;
-    /* align-items: center; */
     justify-content: space-around;
+    
     height: 100vh;
     font-size: 24px;
-    /* margin: 200px */
-}
-
-.first-contact-container{
+    /* margin: 20px 0; */
+  }
+  
+  .first-contact-container {
     background-color: rgba(249, 60, 60, 0.9);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 60%;
-    height: auto;
-    
     padding: 20px;
     text-align: center;
     color: #fff;
-    
-
-}
-
-.second-contact-container{
-    background-color: #f7f7f7;
+  }
+  
+  .second-contact-container {
+    background-color: var(--light-gray);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 40%;
-    
-
-    
-}
-.first-contact-container h2{
+  }
+  
+  .first-contact-container h2,
+  .first-contact-container h3,
+  .first-contact-container p {
     padding: 10px;
-}
-.first-contact-container h3{
-    padding: 10px;
-}
-.first-contact-container p{
-    padding: 10px;
-}
-.first-contact-container a{
-    color: #FFF;
+  }
+  
+  .first-contact-container a {
+    color: #fff;
     text-decoration: underline;
-}
-#main-form h1 .social-separator{
+  }
+  
+  #main-form .social-separator {
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
-    /* margin-bottom: 20px; */
-}
-
-input{
-    
+  }
+  
+  input,
+  select,
+  textarea {
+    width: 100%;
     height: auto;
     background-color: var(--light-gray);
     border: 1px solid var(--black);
     border-radius: 5px;
-}
-select{
-    height: 30px;
-    
-    background-color: var(--light-gray);
-    border: 1px solid var(--black);
-    border-radius: 5px;
-}
-form{
+    font-size: 16px;
+    margin-bottom: 10px; /* Add margin for spacing */
+  }
+  
+  form {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    display: block;
-    width:50%;
-    /* border: 2px solid var(--black); */
+    width: 100% ; /* Adjusted width for better layout */
     border-radius: 10px;
     padding: 10px;
+  }
+  
+  label {
+    color: var(--black);
+    font-size: 20px;
+    margin-bottom: 5px; /* Add margin for spacing */
+  }
+  .col-md-6{
+    width: 100% !important;
+  }
+  .form-check {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 10px; /* Add margin for spacing */
+  }
+  
+  .form-check input {
+    text-align: start;
+    width: 1em;
+    margin-right: 5px; /* Adjusted margin for better spacing */
+  }
+  
+  @media screen and (max-width: 576px) {
+    .contact-container {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: auto;
     }
-
-    form input{
-        width: 100%;
-        font-size: 16px;
+  
+    .first-contact-container,
+    .second-contact-container {
+      width: 100%;
+      padding: 20px 0;
     }
-    form select{
-        width: 100%;
-        font-size: 16px;
-
+  
+    form {
+      width: 100%;
     }
-    form textarea{
-        width: 100%;
-        font-size: 16px;
-        
+  
+    .contact-container {
+      font-size: 18px; /* Adjust font size for smaller screens */
     }
-    label{
-        color: var(--black);
-        font-size: 20px;
-    }
-    textarea{
-       
-    background-color: var(--light-gray);
-    border: 1px solid var(--black);
-    border-radius: 5px;
-    }
-    .form-check input{
-        text-align: start;
-        width: auto;
-        margin-right: 2px;
-    }
-    
-    .form-check{
-        
-        display: flex;
-        flex-direction: row;
-    }
-
-    @media screen and (max-width:576px) {
-        .contact-container{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            width: 100%;
-            height: auto;
-            
-        }
-
-        .first-contact-container{
-            width: 100%;
-            padding-top: 20px;
-        }
-        .second-contact-container{
-            width: 100%;
-            padding-top: 20px;
-            padding-bottom: 20px;
-
-
-        }
-        form{
-            width: 100%;
-        }
-    }
+  }
+  

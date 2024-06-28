@@ -44,7 +44,7 @@ export default function AboutPage() {
           colorful, delicate macarons that were almost too pretty to eat. As
           their final year project, they decided to turn their dream into
           reality. <span id="dots">... </span>
-          <span id="more">
+          <span   id="more">
             They found a cozy corner shop that looked like it leapt out of a
             storybook, with large windows that invited the morning sun and a
             vintage sign that swayed gently in the breeze. With a lick of paint,
@@ -72,7 +72,7 @@ export default function AboutPage() {
           onClick={readMoreFunction}
           type="button"
           id="read-more-btn"
-          className="btn"
+          className="btn secondary"
         >
           Read More
         </button>

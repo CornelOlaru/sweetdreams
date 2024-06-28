@@ -36,3 +36,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+.btn:hover{
+    border: 1px solid gray !important;
+}

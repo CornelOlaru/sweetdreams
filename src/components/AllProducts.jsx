@@ -1,15 +1,33 @@
 import { useState } from "react";
 import Card from "./Card";
 import AllProductsList from "./AllProductsList";
-import { Nav } from "react-bootstrap";
+// import { Nav } from "react-bootstrap";
+import ProductModal from "./ProductModal";
+import CategoryNavbar from "./CategoryNavbar";
 
 
 export default function AllProducts() {
   const [localProducts, setLocalProducts] = useState([...AllProductsList]);
   const [nameFilter, setNameFilter] = useState("");
-  const [category] = useState("");
+  const [category] = useState(""); 
+  const [selectedProduct, setSelectedProduct] = useState(null);
+  const [showModal, setShowModal] = useState(false);
   // const [priceFilter, setPriceFilter] = useState(0);
+  
+  
+  const handleViewProduct = (product) => {
+    setSelectedProduct(product);
+    setShowModal(true);
+  };
 
+  const handleCloseModal = () => {
+    setShowModal(false);
+    setSelectedProduct(null);
+  };
+const handleBuyModal = () => {
+  alert("The product has been bought!!")
+  setShowModal(false)
+}
   // Combined filter function
   const filterProducts = (name) => {
     let newProducts = AllProductsList.filter(
@@ -41,32 +59,10 @@ export default function AllProducts() {
       <div className="container">
 
       
-      <Nav className="navbar navbar-expand-lg navbar-light bg-light">
-  
-  <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    <span className="navbar-toggler-icon"></span>
-  </button>
-  <div className="collapse navbar-collapse" id="navbarNav">
-    <ul className="navbar-nav">
-      <li className="nav-item active">
-        <a className="nav-link" href="/">Home <span className="sr-only">(current)</span></a>
-      </li>
-      <li className="nav-item">
-        <a className="nav-link" href="/category/1">Cakes</a>
-      </li>
-      <li className="nav-item">
-        <a className="nav-link" href="/category/2">Pastries</a>
-      </li>
-      <li className="nav-item">
-        <a className="nav-link " href="/category/3">Cookies</a>
-      </li>
-    </ul>
-  </div>
-    <form className="form-inline">
-    <input className="form-control mr-sm-2" type="search" placeholder="Search for a product..." aria-label="Search" value={nameFilter} onChange={onNameFilterChange}/>
-    {/* <button className="btn btn-outline-danger my-2 my-sm-0" type="submit">Search</button> */}
-  </form>
-</Nav>
+      <CategoryNavbar 
+        value={nameFilter}
+        onChange={onNameFilterChange}
+      />
       
       {/* <Input value={nameFilter} onChange={onNameFilterChange} /> */}
       {/* <label>Filter by price: </label> */}
@@ -80,9 +76,16 @@ export default function AllProducts() {
             shortDescription={item.shortDescription}
             image={item.image}
             price={item.price}
+            onView={() => handleViewProduct(item)} // Pass the product to the onView handler
           />
         ))}
       </div>
+      <ProductModal
+          show={showModal}
+          handleClose={handleCloseModal}
+          product={selectedProduct}
+          handleBuy={handleBuyModal}
+        />
     </div>
     </div>
   );
